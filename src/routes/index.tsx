@@ -574,7 +574,7 @@ function Index() {
       </section>
 
       {/* Rodapé */}
-      <footer className="bg-ink pt-14 pb-28 sm:pb-14 text-center text-xs text-ink-foreground/70">
+      <footer className="bg-ink py-14 text-center text-xs text-ink-foreground/70">
         <div className="mx-auto max-w-6xl space-y-4 px-5 sm:px-6">
           <p className="font-display text-xl text-ink-foreground">Nail Designer Pro 4.0</p>
           <p>
@@ -596,21 +596,6 @@ function Index() {
           </p>
         </div>
       </footer>
-
-      {/* Barra Fixa Mobile (Sticky Floating CTA) */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 flex items-center justify-between gap-3 border-t border-border/80 bg-background/95 px-4 py-3 shadow-[0_-8px_20px_rgba(0,0,0,0.12)] backdrop-blur-md sm:hidden">
-        <div className="min-w-0">
-          <p className="truncate text-[10px] font-bold uppercase tracking-wider text-gold">Nail Designer Pro 4.0</p>
-          <p className="truncate text-xs font-semibold text-foreground">12x de R$ 7,78 · Certificado Incluso</p>
-        </div>
-        <a
-          href={CHECKOUT_URL}
-          onClick={trackInitiateCheckout}
-          className="cta-shine shrink-0 rounded-full bg-ink px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-ink-foreground shadow-md transition hover:bg-primary"
-        >
-          Garantir vaga ↗
-        </a>
-      </div>
     </main>
   );
 }
