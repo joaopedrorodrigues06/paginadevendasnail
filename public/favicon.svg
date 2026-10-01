@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#230d1a" />
+      <stop offset="100%" stop-color="#0f050c" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="16" y1="8" x2="48" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffe8a3" />
+      <stop offset="45%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#997519" />
+    </linearGradient>
+    <linearGradient id="nailGrad" x1="20" y1="14" x2="44" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="35%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+    <linearGradient id="glossGrad" x1="25" y1="16" x2="28" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1" />
+    </linearGradient>
+    <radialGradient id="sparkleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe082" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffe082" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo Dark Luxury com Borda Dourada -->
+  <rect x="2.5" y="2.5" width="59" height="59" rx="17" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="2.5" />
+
+  <!-- Formato da Unha Amendoada / Stiletto com Curvatura C e Acabamento Glossy -->
+  <g transform="translate(1, 1)">
+    <!-- Base da unha -->
+    <path d="M 23 48 C 23 43 23.5 37 24.5 32 C 25.5 22 29 16 31 14 C 33 16 36.5 22 37.5 32 C 38.5 37 39 43 39 48 C 39 49.5 38 50 31 50 C 24 50 23 49.5 23 48 Z" fill="url(#nailGrad)" />
+    <!-- Contorno Dourado da Unha -->
+    <path d="M 23 48 C 23 43 23.5 37 24.5 32 C 25.5 22 29 16 31 14 C 33 16 36.5 22 37.5 32 C 38.5 37 39 43 39 48" fill="none" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round" />
+    <!-- Linha de Brilho / Ponto de Tensão (Highlight) -->
+    <path d="M 26.5 34 C 26.5 25 28.5 19 30.5 16" stroke="url(#glossGrad)" stroke-width="2.2" stroke-linecap="round" />
+    <!-- Cúticula sutil -->
+    <ellipse cx="31" cy="48" rx="6" ry="1.2" fill="#fecdd3" opacity="0.35" />
+  </g>
+
+  <!-- Brilho / Sparkle Superior Direito (Diamante / Joia) -->
+  <g transform="translate(43, 15)">
+    <circle cx="0" cy="0" r="6" fill="url(#sparkleGlow)" />
+    <path d="M 0 -9 Q 0 0 9 0 Q 0 0 0 9 Q 0 0 -9 0 Q 0 0 0 -9 Z" fill="#fff9db" />
+    <circle cx="0" cy="0" r="1.8" fill="#ffffff" />
+  </g>
+
+  <!-- Segundo Brilho sutil à esquerda -->
+  <g transform="translate(15, 27) scale(0.55)">
+    <circle cx="0" cy="0" r="5" fill="url(#sparkleGlow)" />
+    <path d="M 0 -8 Q 0 0 8 0 Q 0 0 0 8 Q 0 0 -8 0 Q 0 0 0 -8 Z" fill="#ffe082" />
+  </g>
+</svg>
